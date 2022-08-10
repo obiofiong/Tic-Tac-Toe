@@ -52,11 +52,11 @@ const Board = () => {
 
   return (
     <>
-      <div className="grid grid-cols-3 gap-1">
+      <div className="grid grid-cols-3 gap-1 xs:gap-2">
         <For each={data()}>
           {(cell, i) => (
             <p
-              className="h-20 w-20 bg-white border-white flex justify-center items-center text-[#2b6b93] text-2xl font-bold cursor-pointer"
+              className="h-[6rem] w-[6rem] bg-white border-white flex justify-center items-center text-[#2b6b93] text-2xl font-bold cursor-pointer"
               onClick={() => {
                 if (cell === "X" || cell === "O") {
                   return;
