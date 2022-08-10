@@ -32,17 +32,17 @@ const Board = () => {
         }
         return temp;
       });
-      console.log("There is a winner!", score());
+      // console.log("There is a winner!", score());
       setWinner(
         currentPlayer() === "Player 2" ? "Player 2 Wins!" : "Player 1 Wins!"
       );
     } else if (checkTie(data())) {
       // Setting the winner to tie in case of a tie
       setWinner("It's a Tie!");
-      console.log("There is NOOOOO winner");
+      // console.log("There is NOOOOO winner");
     }
     setCurrentPlayer(currentPlayer() === "Player 1" ? "Player 2" : "Player 1");
-    console.log(currentPlayer());
+    // console.log(currentPlayer());
   };
 
   // createEffect

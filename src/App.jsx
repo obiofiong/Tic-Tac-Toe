@@ -13,12 +13,12 @@ const [score, setScore] = createSignal([0, 0]);
 // const [data, setData] = createSignal(["", "", "", "", "", "X", "", "O", "X"]);
 
 function App() {
-  createEffect(() => {
-    console.log("winner", winner());
-    console.log(score());
-  });
+  // createEffect(() => {
+  //   console.log("winner", winner());
+  //   console.log(score());
+  // });
   return (
-    <div class="p-20 flex justify-start items-center flex-col h-screen bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
+    <div class="p-6 xs:p-20 flex justify-start items-center flex-col h-screen bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
       <h1 class="text-blue-900 font-bold text-2xl">Tic tac toe</h1>
       {!(score()[0] === 0 && score()[1] === 0) && (
         <h3>
